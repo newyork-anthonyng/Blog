@@ -10,4 +10,5 @@ This blog will show projects that I have been working on.
     * Title
     * Link
     * Description
+    * Category (project, book, event)
     * Timestamp

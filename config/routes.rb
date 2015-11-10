@@ -1,4 +1,23 @@
 Rails.application.routes.draw do
+
+  root 'welcome#index'
+
+  post 'create'     => 'welcome#create'
+  get 'new'   => 'welcome#new'
+
+  get 'projects' => 'welcome#projects'
+  get 'misc'     => 'welcome#miscellaneous'
+
+
+ #  welcome_index GET    /welcome(.:format)          welcome#index
+ #              POST   /welcome(.:format)          welcome#create
+ #  new_welcome GET    /welcome/new(.:format)      welcome#new
+ # edit_welcome GET    /welcome/:id/edit(.:format) welcome#edit
+ #      welcome GET    /welcome/:id(.:format)      welcome#show
+ #              PATCH  /welcome/:id(.:format)      welcome#update
+ #              PUT    /welcome/:id(.:format)      welcome#update
+ #              DELETE /welcome/:id(.:format)      welcome#destroy
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
