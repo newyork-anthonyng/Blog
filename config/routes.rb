@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   post 'create'     => 'welcome#create'
-  get 'new'   => 'welcome#new'
+  get 'new'         => 'welcome#new'
 
   get 'projects' => 'welcome#projects'
   get 'misc'     => 'welcome#miscellaneous'
