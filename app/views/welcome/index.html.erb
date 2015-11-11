@@ -1,35 +1,51 @@
-<h1>Welcome to Anthony's website</h1>
+<div class="jumbotron" id="header">
+  <div class="container">
+    <h1>Welcome to Anthony's website</h1>
+  </div>
+</div>
 
-<h2>Skills</h2>
-<ul>
-  <li>HTML</li>
-  <li>CSS</li>
-    <li>JavaScript</li>
-  <li>Ruby</li>
-  <li>Rails</li>
-  <li>Node.js</li>
-  <li>Express</li>
-</ul>
+<div id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+        <li>JavaScript</li>
+      <li>Ruby</li>
+      <li>Rails</li>
+      <li>Node.js</li>
+      <li>Express</li>
+    </ul>
+  </div>
+</div>
 
-<h2>Projects</h2>
-<ul>
-  <% @project_posts.each do |project| %>
-    <li>
-      <%= project.title %> |
-      <%= project.description %> |
-      <a href="<%= project.project_url %>" target="_blank" %>Link to Project</a> |
-      <a href="<%= project.blog_url %>" target="_blank">Link to Blog</a>
-    </li>
-  <% end %>
-</ul>
+<div id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <ul>
+      <% @project_posts.each do |project| %>
+        <li>
+          <%= project.title %> |
+          <%= project.description %> |
+          <a href="<%= project.project_url %>" target="_blank" %>Link to Project</a> |
+          <a href="<%= project.blog_url %>" target="_blank">Link to Blog</a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
 
-<h2>Contact Information</h2>
-<ul>
-  <li>newyork.anthonyng@gmail.com</li>
-  <li><a href="https://github.com/newyork-anthonyng"
-         target="_blank">Github</a>
-  </li>
-  <li><a href="https://www.linkedin.com/in/anthony-ng-02856056"
-         target="_blank">linkedin</a>
-  </li>
-</ul>
+<div id="contact">
+  <div class="container">
+    <h2>Contact Information</h2>
+    <ul>
+      <li>newyork.anthonyng@gmail.com</li>
+      <li><a href="https://github.com/newyork-anthonyng"
+             target="_blank">Github</a>
+      </li>
+      <li><a href="https://www.linkedin.com/in/anthony-ng-02856056"
+             target="_blank">linkedin</a>
+      </li>
+    </ul>
+  </div>
+</div>
