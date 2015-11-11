@@ -2,9 +2,12 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  
+  get '/user/:id' => 'users#show', as: 'user'
 
- #  welcome_index GET    /welcome(.:format)          welcome#index
+  get '/login'    => 'sessions#new', as: 'login'
+  post '/login'   => 'sessions#create'
+  get '/logout'   => 'sessions#destroy'
+ #  welcome_index GET    /welcome(.:format)        welcome#index
  #              POST   /welcome(.:format)          welcome#create
  #  new_welcome GET    /welcome/new(.:format)      welcome#new
  # edit_welcome GET    /welcome/:id/edit(.:format) welcome#edit

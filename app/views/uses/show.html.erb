@@ -1,0 +1,12 @@
+<h1><%= "Welcome Back, #{@user.fname}" %></h1>
+
+<h2>Add a new post</h2>
+<%= form_for @post do |f| %>
+  <p>
+    <%= f.text_field :title, placeholder: "post title" %><br>
+    <%= f.text_field :description, placeholder: "post description" %><br>
+    <%= f.text_field :project_url, placeholder: "link to project" %><br>
+    <%= f.text_field :blog_url, placeholder: "link to blog" %><br>
+
+  </p>
+<% end %>
