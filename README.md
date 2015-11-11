@@ -8,7 +8,8 @@ This blog will show projects that I have been working on.
 ## Model
 ### Post
     * Title
-    * Link
     * Description
+    * Project Link
+    * Blog Link
     * Category (project, book, event)
     * Timestamp
