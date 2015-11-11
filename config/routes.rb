@@ -2,12 +2,7 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  post 'create'     => 'welcome#create'
-  get 'new'         => 'welcome#new'
-
-  get 'projects' => 'welcome#projects'
-  get 'misc'     => 'welcome#miscellaneous'
-
+  
 
  #  welcome_index GET    /welcome(.:format)          welcome#index
  #              POST   /welcome(.:format)          welcome#create
