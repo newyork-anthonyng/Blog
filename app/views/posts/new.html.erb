@@ -1,0 +1,27 @@
+<h1>Create a new post</h1>
+
+<% if @post.errors.any? %>
+  <h3><%= pluralize(@post.errors.count, "error") %> found</h3>
+  <ul>
+    <% @post.errors.full_messages.each do |message| %>
+      <li>
+        <%= message %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for([@user, @post]) do |f| %>
+  <p>
+    <%= f.text_field :title, placeholder: "title" %><br>
+    <%= f.text_field :description, placeholder: "description" %><br>
+    <%= f.text_field :project_url, placeholder: "link to project" %><br>
+    <%= f.text_field :blog_url, placeholder: "link to blog" %><br>
+    <%= f.text_field :category, placeholder: "category" %>
+  </p>
+  <p>
+    <%= f.submit "Create new post" %>
+  </p>
+<% end %>
+
+<%= link_to "<< Back", user_path(@user) %>

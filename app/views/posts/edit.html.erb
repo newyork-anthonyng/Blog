@@ -1,0 +1,16 @@
+<h1>Edit Post</h1>
+
+<%= form_for([@post.user, @post]) do |f| %>
+  <p>
+    <%= f.text_field :title, placeholder: "title" %><br>
+    <%= f.text_field :title, placeholder: "description" %><br>
+    <%= f.text_field :title, placeholder: "link to project" %><br>
+    <%= f.text_field :title, placeholder: "link to blog" %><br>
+    <%= f.text_field :title, placeholder: "category" %><br>
+  </p>
+  <p>
+    <%= f.submit "Edit Post" %>
+  </p>
+<% end %>
+
+<%= link_to "<< Back", user_path(@post) %>

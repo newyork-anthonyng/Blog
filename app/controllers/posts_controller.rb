@@ -1,14 +1,35 @@
 class PostsController < ApplicationController
 
-  def index
-
+  def new
+    @user = User.find(params[:user_id])
+    @post = @user.posts.new
   end
 
   def create
     @user = User.find(params[:user_id])
-    @post = @user.posts.create(post_params)
+    @post = @user.posts.new(post_params)
 
-    redirect_to uswer_path(@user)
+    if @post.save
+      redirect_to user_path(@user)
+    else
+      render "new"
+    end
+  end
+
+  def edit
+    @user = User.find(params[:user_id])
+    @post = Post.find(params[:id])
+  end
+
+  def update
+    @post = Post.find(params[:id])
+
+    if @post.update(post_params)
+      flash.notice = "Post updated."
+      redirect_to user_path(@post.user)
+    else
+      render "edit"
+    end
   end
 
   private
