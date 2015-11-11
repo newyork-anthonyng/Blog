@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  get '/user/:id' => 'users#show', as: 'user'
+  resources :users do
+    resources :posts
+  end
 
   get '/login'    => 'sessions#new', as: 'login'
   post '/login'   => 'sessions#create'

@@ -1,1 +1,27 @@
 <h1><%= "Welcome Back, #{@user.fname}" %></h1>
+
+<%= link_to "Create new post", new_user_post_path(@user) %>
+
+<h2>All Posts</h2>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Project URL</th>
+    <th>Blog URL</th>
+    <th>Category</th>
+  </tr>
+
+  <% @posts.each do |post| %>
+    <tr>
+      <td><%= post.title %></td>
+      <td><%= post.description %></td>
+      <td><%= post.project_url %></td>
+      <td><%= post.blog_url %></td>
+      <td><%= post.category %></td>
+      <td>Edit</td>
+      <td>Delete</td>
+    </tr>
+  <% end %>
+</table>
