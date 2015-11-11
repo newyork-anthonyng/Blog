@@ -1,5 +1,5 @@
 <h1><%= "Welcome Back, #{@user.fname}" %></h1>
-
+<%= link_to "Logout", logout_path %>
 <%= link_to "Create new post", new_user_post_path(@user) %>
 
 <h2>All Posts</h2>
@@ -21,7 +21,8 @@
       <td><%= post.blog_url %></td>
       <td><%= post.category %></td>
       <td><%= link_to "Edit", edit_user_post_path(@user, post) %></td>
-      <td>Delete</td>
+      <td><%= link_to "Delete", user_post_path(@user, post),
+              method: :delete, data: { confirm: "Are you sure?" } %></td>
     </tr>
   <% end %>
 </table>

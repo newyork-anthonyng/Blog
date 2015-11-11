@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
-
+  before_action :authorize
+  
   def new
     @user = User.find(params[:user_id])
     @post = @user.posts.new
@@ -31,6 +32,15 @@ class PostsController < ApplicationController
     else
       render "edit"
     end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @user = User.find(params[:user_id])
+
+    @post.destroy
+    flash.notice = "Post deleted"
+    redirect_to user_path(@user)
   end
 
   private
