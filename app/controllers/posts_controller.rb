@@ -22,6 +22,7 @@ class PostsController < ApplicationController
   end
 
   def update
+    @user = User.find(params[:user_id])
     @post = Post.find(params[:id])
 
     if @post.update(post_params)
