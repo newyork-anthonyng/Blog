@@ -1,28 +1,13 @@
 <div class="jumbotron" id="header">
   <div class="container">
-    <h1>Welcome to Anthony's website</h1>
-  </div>
-</div>
-
-<div id="skills">
-  <div class="container">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-        <li>JavaScript</li>
-      <li>Ruby</li>
-      <li>Rails</li>
-      <li>Node.js</li>
-      <li>Express</li>
-    </ul>
+    <h1 class="title">Welcome to Anthony's website</h1>
   </div>
 </div>
 
 <div id="projects">
   <div class="container">
-    <h2>Projects</h2>
-    <ul>
+    <h2 class="title">Projects</h2>
+    <ul class="text">
       <% @project_posts.each do |project| %>
         <li>
           <%= project.title %> |
@@ -33,12 +18,47 @@
       <% end %>
     </ul>
   </div>
+</div>  
+
+<div id="skills">
+  <div class="container">
+    <h2 class="title">Skills</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4">
+          <%= image_tag("html.png", size:"128x128", class:"skills-icon") %>
+        </div>
+
+        <div class="col-xs-4">
+          <%= image_tag("javascript.png", size:"128x128", class:"skills-icon") %>
+        </div>
+
+        <div class="col-xs-4">
+          <%= image_tag("ruby.png", size:"128x128", class:"skills-icon") %>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-xs-4">
+          <%= image_tag("css.png", size:"128x128", class:"skills-icon") %>
+        </div>
+
+        <div class="col-xs-4">
+          <%= image_tag("node.png", size:"128x128", class:"skills-icon") %>
+        </div>
+
+        <div class="col-xs-4">
+          <%= image_tag("rails.png", size:"128x128", class:"skills-icon") %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div id="contact">
   <div class="container">
-    <h2>Contact Information</h2>
-    <ul>
+    <h2 class="title">Contact Information</h2>
+    <ul class="text">
       <li>newyork.anthonyng@gmail.com</li>
       <li><a href="https://github.com/newyork-anthonyng"
              target="_blank">Github</a>
