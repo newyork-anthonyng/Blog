@@ -1,37 +1,29 @@
 #header, #skills, #projects, #contact {
-  padding:50px 0px 50px 0px;
+  padding:15px 0px 15px 0px;
 }
 
 #header {
-  background-color:#284E9C;
-  color:#433107;
   margin-bottom:0px;
   text-align:center;
 }
 
 #skills {
-  background-color:#2C8190;
-  color:#432207;
 }
 
 #projects {
-  background-color:#2B74A7;
-  color:#432B07;
 }
 
 #contact {
-  background-color:#2BA797;
-  color:#431907;
 }
 
 .title {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size:48px;
+  font-family: 'Montserrat', sans-serif;
+  font-size:24px;
 }
 
 .text {
-  font-family: 'Playfair Display', serif;
-  font-size:24px;
+  font-family: 'Domine', serif;
+  font-size:18px;
 }
 
 .skills-icon {
@@ -44,13 +36,20 @@ h1, h2 {
 }
 
 a {
-  color:black;
+  color:#4786F1;
 }
 
 a:hover {
-  color:black;
+  color:#4786F1;
+  font-weight:bold;
 }
 
 ul {
   list-style:none;
+}
+
+hr {
+  background:#DDD;
+  height:2px;
+  /*box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);*/
 }

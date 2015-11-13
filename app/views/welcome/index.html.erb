@@ -1,73 +1,69 @@
 <div class="jumbotron" id="header">
   <div class="container">
-    <h1 class="title">Welcome to Anthony's website</h1>
-  </div>
-</div>
-
-<div id="projects">
-  <div class="container">
-    <h2 class="title">Projects</h2>
-    <ul class="text">
-      <% @project_posts.each do |project| %>
-        <li>
-          <%= project.title %> |
-          <%= project.description %> |
-          <a href="<%= project.project_url %>" target="_blank" %>Link to Project</a> |
-          <% if project.blog_url != "" %>
-            <a href="<%= project.blog_url %>" target="_blank">Link to Blog</a>
-          <% end %>
-        </li>
-      <% end %>
-    </ul>
+    <h1 class="title">ANTHONY NG</h1>
   </div>
 </div>
 
 <div id="skills">
   <div class="container">
-    <h2 class="title">Skills</h2>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-4">
-          <%= image_tag("html.png", size:"128x128", class:"skills-icon") %>
+    <div class="col-sm-8 col-sm-offset-2">
+      <h2 class="title">Skills</h2>
+      <hr>
+      <div class="container">
+        <div class="col-sm-3 text">
+          HTML<br>
+          CSS<br>
+          JavaScript<br>
         </div>
-
-        <div class="col-xs-4">
-          <%= image_tag("javascript.png", size:"128x128", class:"skills-icon") %>
+        <div class="col-sm-3 text">
+          Ruby<br>
+          Rails<br>
+          Node.js<br>
         </div>
-
-        <div class="col-xs-4">
-          <%= image_tag("ruby.png", size:"128x128", class:"skills-icon") %>
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-xs-4">
-          <%= image_tag("css.png", size:"128x128", class:"skills-icon") %>
-        </div>
-
-        <div class="col-xs-4">
-          <%= image_tag("node.png", size:"128x128", class:"skills-icon") %>
-        </div>
-
-        <div class="col-xs-4">
-          <%= image_tag("rails.png", size:"128x128", class:"skills-icon") %>
+        <div class="col-sm-3 text">
+          Express<br>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<div id="projects">
+  <div class="container">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h2 class="title">Projects</h2>
+      <hr>
+      <ul class="text">
+        <% @project_posts.each do |project| %>
+          <li>
+            <%= project.title %> |
+            <%= project.description %><br>
+            <a href="<%= project.project_url %>" target="_blank" %>Link to Project</a>
+            <% if project.blog_url != "" %>
+              | <a href="<%= project.blog_url %>" target="_blank">Link to Blog</a>
+            <% end %>
+          </li>
+          <br>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <div id="contact">
   <div class="container">
-    <h2 class="title">Contact Information</h2>
-    <ul class="text">
-      <li>newyork.anthonyng@gmail.com</li>
-      <li><a href="https://github.com/newyork-anthonyng"
-             target="_blank">Github</a>
-      </li>
-      <li><a href="https://www.linkedin.com/in/anthony-ng-02856056"
-             target="_blank">linkedin</a>
-      </li>
-    </ul>
+    <div class="col-sm-8 col-sm-offset-2">
+      <h2 class="title">Contact Information</h2>
+      <hr>
+      <ul class="text">
+        <li>newyork.anthonyng@gmail.com</li>
+        <li><a href="https://github.com/newyork-anthonyng"
+               target="_blank">Github</a>
+        </li>
+        <li><a href="https://www.linkedin.com/in/anthony-ng-02856056"
+               target="_blank">linkedin</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
