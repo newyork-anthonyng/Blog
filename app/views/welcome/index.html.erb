@@ -1,15 +1,17 @@
 <div class="jumbotron" id="header">
   <div class="container">
     <h1 class="title">Hey, I'm Anthony</h1>
-    <%= image_tag("node.png", size: "128x128") %>
-    <p>
-      <br><br>
-      Aspiring Web Developer. I like to create blah blah blah.
-    </p>
+    <br>
+    <div class="col-sm-6 col-sm-offset-3">
+      <p>
+      I'm an aspiring web developer who likes creating and designing useful and
+      practical web applications.
+      </p>
+    </div>
   </div>
 </div>
 
-<div id="skills">
+<div class="skills">
   <div class="container">
     <div class="col-sm-8 col-sm-offset-2">
       <h2 class="title">Skills</h2>
@@ -30,13 +32,13 @@
         </div>
       </div>
     </div>
-  </div>
+</div>
 </div>
 
-<div id="projects">
+<div class="projects">
   <div class="container">
     <div class="col-sm-8 col-sm-offset-2">
-      <h2 class="title">Projects</h2>
+      <h2 class="title">Recent Projects</h2>
       <hr>
       <ul class="text">
         <% @project_posts.each do |project| %>
@@ -50,15 +52,16 @@
           </li>
           <br>
         <% end %>
+        <a href="#">(More Projects...)</a>
       </ul>
     </div>
   </div>
 </div>
 
-<div id="contact">
+<div class="contacts">
   <div class="container">
     <div class="col-sm-8 col-sm-offset-2">
-      <h2 class="title">Contact Information</h2>
+      <h2 class="title">Contact Me</h2>
       <hr>
       <ul class="text">
         <li>newyork.anthonyng@gmail.com</li>
@@ -66,7 +69,7 @@
                target="_blank">Github</a>
         </li>
         <li><a href="https://www.linkedin.com/in/anthony-ng-02856056"
-               target="_blank">linkedin</a>
+               target="_blank">Linkedin</a>
         </li>
       </ul>
     </div>

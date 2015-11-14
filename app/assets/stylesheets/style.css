@@ -1,23 +1,6 @@
-#header, #skills, #projects, #contact {
-  padding:15px 0px 15px 0px;
-}
-
 #header {
   background-color:rgba(71,134,241,0.5);
-  margin-bottom:0px;
   text-align:center;
-}
-
-#skills {
-}
-
-#projects {
-}
-
-#contact {
-}
-
-.jumbotron {
 }
 
 .title {
@@ -27,12 +10,12 @@
 
 .text {
   font-family: 'Domine', serif;
-  font-size:18px;
+  font-size:20px;
 }
 
-.skills-icon {
-  border:5px solid white;
-  border-radius:100%;
+.projects, .skills, .contacts {
+  margin-bottom:80px;
+  line-height:2.5em;
 }
 
 h1, h2 {
@@ -47,7 +30,7 @@ a {
 a:hover {
   color:#4786F1;
   font-family:'Montserrat', sans-serif;
-  font-weight:bold;
+  font-size:20px;
 }
 
 ul {
@@ -57,8 +40,4 @@ ul {
 hr {
   background:#DDD;
   height:2px;
-}
-
-.col-sm-8 {
-  padding-left:0px;
 }
