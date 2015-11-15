@@ -1,11 +1,13 @@
+<% @title = "Anthony Ng | Home" %>
+
 <div class="jumbotron" id="header">
   <div class="container">
-    <h1 class="title">Hey, I'm Anthony</h1>
+    <h1 class="text">Hey, I'm Anthony</h1>
     <br>
     <div class="col-sm-6 col-sm-offset-3">
-      <p>
-      I'm an aspiring web developer who likes creating and designing useful and
-      practical web applications.
+      <p>I'm an aspiring web developer who loves</p>
+      <p id="description">developing and designing</p>
+      <p>useful and practical web applications.</p>
       </p>
     </div>
   </div>
@@ -20,14 +22,15 @@
         <div class="col-sm-3 text">
           HTML<br>
           CSS<br>
-          JavaScript<br>
+          jQuery<br>
         </div>
         <div class="col-sm-3 text">
+          JavaScript<br>
           Ruby<br>
           Rails<br>
-          Node.js<br>
         </div>
         <div class="col-sm-3 text">
+          Node.js<br>
           Express<br>
         </div>
       </div>
@@ -41,18 +44,8 @@
       <h2 class="title">Recent Projects</h2>
       <hr>
       <ul class="text">
-        <% @project_posts.each do |project| %>
-          <li>
-            <%= project.title %> |
-            <%= project.description %><br>
-            <a href="<%= project.project_url %>" target="_blank" %>Link to Project</a>
-            <% if project.blog_url != "" %>
-              | <a href="<%= project.blog_url %>" target="_blank">Link to Blog</a>
-            <% end %>
-          </li>
-          <br>
-        <% end %>
-        <a href="#">(More Projects...)</a>
+        <%= render partial: "project_post" %>
+        <%= link_to "(More Projects...)", projects_path %>
       </ul>
     </div>
   </div>

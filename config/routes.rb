@@ -9,14 +9,7 @@ Rails.application.routes.draw do
   get '/login'    => 'sessions#new', as: 'login'
   post '/login'   => 'sessions#create'
   get '/logout'   => 'sessions#destroy'
- #  welcome_index GET    /welcome(.:format)        welcome#index
- #              POST   /welcome(.:format)          welcome#create
- #  new_welcome GET    /welcome/new(.:format)      welcome#new
- # edit_welcome GET    /welcome/:id/edit(.:format) welcome#edit
- #      welcome GET    /welcome/:id(.:format)      welcome#show
- #              PATCH  /welcome/:id(.:format)      welcome#update
- #              PUT    /welcome/:id(.:format)      welcome#update
- #              DELETE /welcome/:id(.:format)      welcome#destroy
+  get '/projects' => 'welcome#projects', as: 'projects'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
