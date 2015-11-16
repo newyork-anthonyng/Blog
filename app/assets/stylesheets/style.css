@@ -28,6 +28,7 @@ hr {
 /********************
 Title and text
 ********************/
+
 .title {
   font-family: 'Lato', sans-serif;
   font-size:24px;
@@ -70,5 +71,5 @@ a {
 }
 
 a:visited {
-  color:#f18b47;
+  color:#6b93d8;
 }
