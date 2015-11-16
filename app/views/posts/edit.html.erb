@@ -1,15 +1,6 @@
 <h1>Edit Post</h1>
 
-<% if @post.errors.any? %>
-  <h3><%= pluralize(@post.errors.count, "error") %> found.</h3>
-  <ul>
-    <% @post.errors.full_messages.each do |message| %>
-      <li>
-        <%= message %>
-      </li>
-    <% end %>
-  </ul>
-<% end %>
+<%= render partial:"error" %>
 
 <%= form_for @post, url: user_post_path do |f| %>
   <p>

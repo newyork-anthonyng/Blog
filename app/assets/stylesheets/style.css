@@ -60,6 +60,10 @@ a:hover {
   font-size:20px;
 }
 
+a:visited {
+  color:#f18b47;
+}
+
 ul {
   list-style:none;
 }
