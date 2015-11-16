@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :authorize
-  
+
   def new
     @user = User.find(params[:user_id])
     @post = @user.posts.new
@@ -28,7 +28,7 @@ class PostsController < ApplicationController
 
     if @post.update(post_params)
       flash.notice = "Post updated."
-      redirect_to user_path(@post.user)
+      redirect_to user_path(@user)
     else
       render "edit"
     end

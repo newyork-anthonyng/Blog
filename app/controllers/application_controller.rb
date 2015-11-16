@@ -16,5 +16,4 @@ class ApplicationController < ActionController::Base
   end
   helper_method :authorize
 
-
 end
