@@ -1,10 +1,10 @@
 <% @project_posts.each do |project| %>
   <li>
-    <%= project.title %> |
+    <%= project.title %> »
     <%= project.description %><br>
     <a href="<%= project.project_url %>" target="_blank" %>Link to Project</a>
     <% if project.blog_url != "" %>
-      |  <a href="<%= project.blog_url %>" target="_blank">Link to Blog</a>
+      | <a href="<%= project.blog_url %>" target="_blank">Link to Blog</a>
     <% end %>
   </li>
   <br>
