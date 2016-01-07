@@ -88,6 +88,10 @@ Main Projects Page
   font-weight: 300;
 }
 
+.projects-main h1 {
+  margin-bottom: 0.75em;
+}
+
 .projects-main a {
   color:#FFC107;
   font-weight: 500;
