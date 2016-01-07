@@ -36,6 +36,7 @@ Skills
 ********************/
 
 .skills {
+  height: 60vh;
   padding: 0.5em 2em 0.5em 2em;
 }
 
@@ -54,6 +55,7 @@ Projects
   padding: 1em;
   font-size: 1.5em;
   font-weight: 300;
+  height: 100vh;
 }
 
 .projects a {
@@ -106,6 +108,7 @@ Contact
   padding: 1em;
   font-size: 1.5em;
   font-weight: 300;
+  height: 50vh;
   line-height: 2em;
   text-align: center;
 }
