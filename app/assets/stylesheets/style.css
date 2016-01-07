@@ -47,6 +47,11 @@ Skills
   text-align: right;
 }
 
+.skills img {
+  margin-top: -2em;
+  width: 70%;
+}
+
 /********************
 Projects
 ********************/
