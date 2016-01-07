@@ -1,19 +1,9 @@
 <% @title = "Anthony Ng | Projects" %>
 
-<br>
-<div class="projects">
-  <div class="container">
-    <div class="col-sm-2">
-      <br>
-      <%= link_to "Home", root_path %>
-    </div>
-    <div class="col-sm-8">
-      <h2 class="title">Projects</h2>
-      <hr>
-
-      <ul class="text">
-        <%= render partial: "project_post" %>
-      </ul>
-    </div>
-  </div>
+<div class="light-blue projects-main">
+  <%= link_to "Home", root_path %>
+  <h1 class="white-text">Projects</h1>
+  <ul>
+    <%= render partial: "project_post" %>
+  </ul>
 </div>

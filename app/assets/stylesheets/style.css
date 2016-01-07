@@ -79,6 +79,22 @@ Projects
 }
 
 /********************
+Main Projects Page
+********************/
+
+.projects-main {
+  padding: 1em 0 2em 2em;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.projects-main a {
+  color:#FFC107;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+/********************
 Contact
 ********************/
 
