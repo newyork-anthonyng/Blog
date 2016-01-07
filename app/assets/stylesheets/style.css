@@ -2,7 +2,36 @@
 Typography for header
 ********************/
 
-h1, h2 {
+.header {
+  padding: 1em 0 2em 2em;
+  height: 50vh;
+}
+
+.header-text {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.header p {
+  margin: 0;
+}
+
+.parallaxParent {
+  height: 50vh;
+}
+
+#developing-text {
+  font-family: 'Cutive Mono';
+  font-size: 2em;
+  letter-spacing: -0.02em;
+}
+
+#designing-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+}
+
+/*h1, h2 {
   font-family:'Lato', sans-serif;
   font-weight:300;
   text-align:center;
@@ -23,7 +52,7 @@ h1, h2 {
 hr {
   background:#DDD;
   height:2px;
-}
+}*/
 
 /********************
 Title and text
@@ -81,5 +110,5 @@ a:visited {
 @keyframes blinking {
   0%   { opacity: 1; }
   50%  { opacity: .25; }
-  100% { opacity: 1; } 
+  100% { opacity: 1; }
 }
